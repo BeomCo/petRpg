@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jin RPG</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<!-- 
+    <article id="mainMenu" class="show">
+        <section>
+            <ul>
+                <li><a id="gameStart">NEW GAME</a></li>
+                <li><a id="credit">CREDIT</a></li>
+            </ul>
+        </section>
+    </article>
+    
+
+    <article id="createPet" class="unShow">
+        <section>
+            <ul>
+                <li><input type="text" name="createName" id="createName"></li>
+                <li><a id="createStart">START</a></li>
+            </ul>
+        </section>
+    </article>
+     -->
+
+    <article id="inGame" class="Show">
+        <header>
+            <div class="container">
+                <div class="stats">
+                    <p class="info_title">STATS</p>
+                </div>
+                <div class="stats_data">
+                    <img class="info_profile" src="" style="height: 50px; width: auto;"></img>
+                    <p class="info_name">NAME : </p>
+                    <p class="info_hp">HP : </p>
+                    <p class="info_lv">LEVEL : </p>
+                </div>
+                <div class="date">
+                    <p>TIME</p>
+                    <p class="info_date">LOADING...</p>
+                    
+                </div>
+            </div>
+        </header>
+
+        <!-- <section class="petGame" style="height: 500px;">
+            
+            <img src="" alt="" class="pet_img" style="width: 200px; display: block;">
+            
+            <p class="monLog" style="display: none;"></p>
+        
+            <p class="petLog" style="display: block;"></p>
+        </section>
+         -->
+        <section id="event_section">
+            <div id="event_explorer" class="unShow">
+                <img src="./img/right_normal.png" class="" alt="myPet">
+            </div>
+            <div id="event_battle" class="show">
+                <div class="myPet_battle"></div>
+                <img src="./img/right_normal.png" alt="myPet" class="battle_myPet">
+                <div class="monster_battle">
+                    <img src="./img/monster.png" alt="monster" class="battle_monster">
+                    <p class="monsterHp">150</p>
+                </div>
+            </div>
+        </section>
+
+        <div id="console">
+
+            <!-- <div id="move_console" class="unshow">
+                <button class="move_left">←</button>
+                <button class="move_right">→</button>
+            </div> -->
+            
+            <div id="interact_console" class="">
+                <button class="startBtn" onclick="start();" style="display: none;">탐험 시작</button>
+                <button class="movePetBtn" onclick="movePet();" style="display: none;">이동</button>
+                <button class="atkPetBtn" onclick="monAtk();" style="display: inline;">공격</button>
+                <button class="healPetBtn" onclick="monHeal();" style="display: inline;">회복</button>
+                <button class="runPetBtn" onclick="monRun();" style="display: inline;">도망</button>
+            </div>
+
+        </div>
+
+        <footer>
+            
+            <div id="event_console">
+                <p class="event_message">LOG TEXT</p>
+            </div>
+        </footer>
+
+    </article>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
